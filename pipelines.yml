@@ -1,0 +1,32 @@
+resources:
+  - name: be_gitRepo
+    type: GitRepo
+    configuration:
+      path: Satheesh-Balachandran/hygieia-core
+      gitProvider: sdemo_github
+      
+pipelines:
+  - name: demo_application
+    steps:
+      - name: bld_backend
+        type: MvnBuild
+        configuration:
+          sourceLocation: .
+          mvnCommand: clean install -ntp
+          configFileLocation: .
+          configFileName: mvn-art-config
+          inputResources:
+            - name: be_gitRepo
+          integrations:
+            - name: PublicGitHub
+          runtime:
+            type: image
+            image:
+              auto:
+                language: java
+                versions:
+                  - "11"
+        execution:
+          onStart:
+            - javac -version
+            - mvn --version
