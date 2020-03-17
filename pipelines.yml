@@ -4,7 +4,8 @@ resources:
     configuration:
       path: Satheesh-Balachandran/Hygieia
       gitProvider: PublicGitHub
-      branch: master
+      branches:
+        include: master
 pipelines:
   - name: demo_application
     steps:
