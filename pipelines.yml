@@ -2,9 +2,9 @@ resources:
   - name: PublicGitHub
     type: GitRepo
     configuration:
-      path: .
+      path: Satheesh-Balachandran/Hygieia
       gitProvider: PublicGitHub
-      
+      branch: master
 pipelines:
   - name: demo_application
     steps:
