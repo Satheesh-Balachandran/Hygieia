@@ -1,5 +1,5 @@
 resources:
-  - name: be_gitRepo
+  - name: PublicGitHub
     type: GitRepo
     configuration:
       path: Satheesh-Balachandran/hygieia-core
