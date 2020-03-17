@@ -14,7 +14,7 @@ pipelines:
         configuration:
           sourceLocation: .
           mvnCommand: clean install -ntp
-          configFileLocation: Hygieia
+          configFileLocation: .
           configFileName: mvn-art-config
           inputResources:
             - name: PublicGitHub
