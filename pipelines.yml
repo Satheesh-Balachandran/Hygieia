@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: Satheesh-Balachandran/hygieia-core
-      gitProvider: sdemo_github
+      gitProvider: PublicGitHub
       
 pipelines:
   - name: demo_application
@@ -16,7 +16,7 @@ pipelines:
           configFileLocation: .
           configFileName: mvn-art-config
           inputResources:
-            - name: be_gitRepo
+            - name: PublicGitHub
           integrations:
             - name: PublicGitHub
           runtime:
