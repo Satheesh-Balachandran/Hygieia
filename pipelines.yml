@@ -30,4 +30,5 @@ pipelines:
         execution:
           onStart:
             - javac -version
+            - git clone https://github.com/Satheesh-Balachandran/Hygieia.git
             - ls -ltrh
