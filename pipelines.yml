@@ -18,7 +18,7 @@ pipelines:
           inputResources:
             - name: PublicGitHub
           integrations:
-            - name: PublicGitHub
+            - name: satheeshart
           runtime:
             type: image
             image:
