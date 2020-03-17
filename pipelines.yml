@@ -13,7 +13,7 @@ pipelines:
         configuration:
           sourceLocation: .
           mvnCommand: clean install -ntp
-          configFileLocation: .
+          configFileLocation: Hygieia
           configFileName: mvn-art-config
           inputResources:
             - name: PublicGitHub
@@ -29,4 +29,4 @@ pipelines:
         execution:
           onStart:
             - javac -version
-            - mvn --version
+            - ls -ltrh
