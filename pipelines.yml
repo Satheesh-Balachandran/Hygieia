@@ -12,7 +12,7 @@ pipelines:
       - name: bld_backend
         type: MvnBuild
         configuration:
-          sourceLocation: ./Hygieia
+          sourceLocation: Hygieia
           mvnCommand: clean install -ntp
           configFileLocation: .
           configFileName: mvn-art-config
