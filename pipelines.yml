@@ -2,7 +2,7 @@ resources:
   - name: PublicGitHub
     type: GitRepo
     configuration:
-      path: Satheesh-Balachandran/hygieia-core
+      path: Satheesh-Balachandran/pipelines
       gitProvider: PublicGitHub
       branches:
         include: master
