@@ -31,4 +31,4 @@ pipelines:
           onStart:
             - javac -version
             - git clone https://github.com/Satheesh-Balachandran/Hygieia.git
-            - ls -ltrh
+            - ls -ltrh /var/opt/jfrog/pipelines/data/demo_application/runs/20/steps/bld_backend/dependencyState/resources/PublicGitHub
