@@ -18,8 +18,8 @@ pipelines:
           configFileName: mvn-art-config
           inputResources:
             - name: PublicGitHub
-          # integrations:
-          #  - name: satheeshart
+          integrations:
+            - name: Artifactory
           runtime:
             type: image
             image:
