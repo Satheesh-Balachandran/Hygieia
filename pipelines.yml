@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: Satheesh-Balachandran/pipelines
-      gitProvider: PublicGitHub
+      gitProvider: jfrog_test
       branches:
         include: master
 pipelines:
@@ -18,8 +18,8 @@ pipelines:
           configFileName: mvn-art-config
           inputResources:
             - name: PublicGitHub
-          integrations:
-            - name: satheeshart
+          # integrations:
+          #  - name: satheeshart
           runtime:
             type: image
             image:
