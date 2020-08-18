@@ -30,5 +30,3 @@ pipelines:
         execution:
           onStart:
             - javac -version
-            - cd /var/opt/jfrog/pipelines/data/demo_application/runs/20/steps/bld_backend/dependencyState/resources/PublicGitHub && git clone https://github.com/Satheesh-Balachandran/Hygieia.git
-            - ls -ltrh /var/opt/jfrog/pipelines/data/demo_application/runs/20/steps/bld_backend/dependencyState/resources/PublicGitHub
