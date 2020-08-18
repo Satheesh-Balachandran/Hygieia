@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: Satheesh-Balachandran/pipelines
-      gitProvider: jfrog_test
+      gitProvider: PublicGitHub
       branches:
         include: master
 pipelines:
